@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>VIDEO</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="container">
+    <div>
+        <!-- navigation awal -->
+        <div class="navbar-container">
+            <ul class="ul-navbar">
+                <li class="li-navbar">
+                    <a class="a-navbar">VIDEO</a>
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <!-- VIDEO -->
+        <table class="table-container">
+            <tr>
+                <td align="center">
+                    <button onclick="playPause()" class="button-container">Play/Pause</button>
+                    <button onclick="makeBig()" class="button-container">Big</button>
+                    <button onclick="makeSmall()" class="button-container">Small</button>
+                    <button onclick="makeNormal()" class="button-container">Normal</button>
+                    <button onclick="enableCon()" class="button-container">Enable Controls</button>
+                    <button onclick="disableCon()" class="button-container">Disable Controls</button>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr class="tr-container">
+                <td>
+                    <video id="myVideo">
+        <source src="videoku.mp4 " type="video/mp4 " class="content-container">
+    </video>
+                </td>
+            </tr>
+        </table>
+</body>
+<script>
+    var myVideo = document.getElementById("myVideo");
+
+    function durationmyVideo() {
+        alert(myVideo.duration);
+    }
+
+    function playPause() {
+        if (myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+        myVideo.loop = true;
+    }
+
+    function makeBig() {
+        myVideo.width = 560;
+    }
+
+    function makeSmall() {
+        myVideo.width = 320;
+    }
+
+    function makeNormal() {
+        myVideo.width = 420;
+    }
+
+    function enableCon() {
+        myVideo.controls = true;
+        myVideo.load();
+    }
+
+    function disableCon() {
+        myVideo.controls = false;
+        myVideo.load();
+    }
+</script>
+
+</html>
