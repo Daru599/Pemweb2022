@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-
+scale=1.0"> 
+    <title>Personal Website</title> 
+    <link rel="stylesheet" href="about.css">
+</head> 
+ 
+<body> 
+    <nav> 
+        <a href="index.html">Home</a> | 
+        <a href="cv.html">Download CV</a> | 
+        <a href="contact1.html">Contact</a> | 
+        <a href="about.html">About me</a> 
+    </nav> 
+ 
+    <hr /> 
+ 
+    <article align="center" style=" font-style: cambria; color:green; margin-bottom: 150px;">
+        <h1>Tentang Saya </h1> 
+        <p> 
+            Perkenalkan nama saya adalah Daru Arya Anugra 
+            Saya adalah seorang Mahasiswa Baru Teknik Informatika. 
+        </p> 
+        <p> 
+            Saya berasal dari kota Kudus, Provinsi Jawa Tengah 
+            saya tidak pernah berhenti untuk  belajar. 
+        </p> 
+        <p> 
+            Saya berusaha ingin belajar semua bahasa baik HTML, CSS, dan Javascript. 
+        </p> 
+        <p> 
+        </article>
+            <div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="BMPCC Cinematic 4K_ London.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script>
+        </p> 
+    </article> 
+ 
+    <hr> 
+    <footer style="text-align: center;"> 
+        <p>Copyright &copy; 2022 Daru.</p> 
+    </footer>
+</body>
+</html>
