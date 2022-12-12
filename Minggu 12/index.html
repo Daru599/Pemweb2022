@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Fungsi di Javascript</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Input Perlengkapan Alat Tulis Kerja</legend>
+        <input type="text" name="barang" placeholder="input nama barang..." />
+        <input type="button" onclick="addBarang()" value="Tambah" />
+    </fieldset>
+
+    <div>
+        <ul id="list-barang">
+            <li>Buku Tulis [<a href="#" onclick="editBarang(0)">Edit</a> | <a href="#" onclick="deleteBarang(0)">Hapus</a>]</li>
+            <li>Pensil [<a href="#" onclick="editBarang(1)">Edit</a> | <a href="#" onclick="deleteBarang(1)">Hapus</a>]</li>
+            <li>Spidol [<a href="#" onclick="editBarang(2)">Edit</a> | <a href="#" onclick="deleteBarang(2)">Hapus</a>]</li>
+        </ul>
+    </div>
+
+    <script src="fungsi.js"></script>
+</body>
+
+</html>
