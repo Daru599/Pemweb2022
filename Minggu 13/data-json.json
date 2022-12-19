@@ -1,0 +1,28 @@
+{ 
+    "name": "Daru Arya", 
+    "hobbies": ["Coding", "Blogging", "Drawing"] 
+} 
+Contoh Objek : 
+{ 
+    "name": "belajarKode", 
+    "url": "dinus.ac.id", 
+    "rank": 1, 
+    "socialmedia": { 
+        "facebook": "belajarkode", 
+        "twitter": "belajarkode ", 
+        "instagram": "belajarkode ", 
+        "youtube": "belajarkode ", 
+        "github": "belajarkode " 
+    } 
+} 
+// objek javascript 
+var person = { 
+    name: "Daru", 
+    age: 19 
+} 
+ 
+// string JSON 
+var jsonString = JSON.stringify(person); 
+ 
+// maka akan menghasilkan: 
+// {"name":"Daru","age":19}
