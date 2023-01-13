@@ -1,66 +1,27 @@
- <<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-
-<body>
-    <h3>daftar mahasiswa</h3>
-    <form action="javascript:void(0);" method="POST" onsubmit="">
-        <input type="text" id="tambahdata" name="mhs" placeholder="tambahkan nama">
-        <input type="button" value="+" onclick="addmhs()">
-    </form>
-    <div id="counter">
-        <!-- 3 mahasiswa terdaftar -->
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <td>nama MHS</td>
-            </tr>
-        </thead>
-        <tbody id="daftarnama">
-            <!-- dinamis pakai javascript -->
-        </tbody>
-    </table>
-    <script>
-        var nama = ['jono', 'joni', 'jini'];
-
-        function showmhs() {
-            var namasiswa = document.getElementById("daftarnama");
-            daftarnama.innerHTML = "";
-
-            for (let i = 0; i < nama.length; i++) {
-                var btnEdit = "<a href='#' onclick='editBarang(" + i + ")'>Edit</a>";
-                var btnHapus = "<a href='#' onclick='deleteBarang(" + i + ")'>Hapus</a>";
-
-                daftarnama.innerHTML += "<li>" + nama[i] + " [" + btnEdit + " | " + btnHapus + "]</li>";
-            }
-        }
-
-        function addmhs() {
-            var input = document.querySelector("input[name=mhs]");
-            nama.push(input.value);
-            showmhs();
-        }
-
-        function editmhs(id) {
-            var newnama = prompt("Nama baru", nama[id]);
-            nama[id] = newmhs;
-            showmhs();
-        }
-
-        function deletemhs(id) {
-            nama.splice(id, 1);
-            showmhs();
-        }
-
-        showmhs();
-    </script>
-</body>
-
-</html>
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Memilih Elemen Berdasarkan ID</title> 
+</head> 
+<body> 
+ 
+    <!-- Elemen div yang akan dipilih dari JS --> 
+    <div id="tutorial"></div> 
+ 
+ 
+    <script type="text/javascript"> 
+        // mengakses elemen tutorial 
+        var tutorial = document.getElementById("tutorial"); 
+ 
+        // mengisi teks ke dalam elemen 
+        tutorial.innerText = "Tutorial Javascript"; 
+ 
+        // memberikan CSS ke elemen 
+        tutorial.style.backgroundColor = "gold"; 
+        tutorial.style.padding = "10px"; 
+ 
+    </script> 
+ 
+</body> 
+</html> 
+ 
